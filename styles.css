@@ -4,6 +4,7 @@ body {
 	background-color: rgba(227, 227, 227, 1.00) !important;
 	max-width: 960px;
 	margin: 0 auto !important;
+	text-align: left;
 }
 
 h1, 
@@ -33,6 +34,7 @@ h2 {
 h3 {
 	font-size: 15px;
 	font-weight: normal;
+	margin: 5px 0px;
 }
 
 .banner {
@@ -44,7 +46,7 @@ margin: 0 auto;
 }
 
 #mainDesc {
-	padding: 0 30px 0px 20px;
+	padding: 0px 30px 0px 0px;
 }
 
 #stateBox {
@@ -55,6 +57,7 @@ margin: 0 auto;
 	background-color: #f5f5f5;
 	padding: 0px 20px 20px;
   border-radius: 5px;
+  display: inline-block;
 }
 
 #stateBox > p{
@@ -68,6 +71,56 @@ margin: 0 auto;
 	margin-bottom: 20px;
 }
 
+.sectionSep {
+	background-color: #f3f3f3;
+	margin: 10px 0;
+	padding: 30px;
+}
 
+.learnMore {
+	background-color: #ffffff;
+	color: #002b5a;
+	font-size: 14px;
+	border-radius: 3px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+	font-family: 'Lato', sans-serif, !important;
+	padding: 10px;
+	margin-right: 170px;
+	display: inline-block;
+}
 
+.gravidaTiles{
+	padding: 15px;
+}
 
+.productTiles {
+	background-color: #ffffff;
+	max-width: 220px;
+	margin: 5px;
+	padding: 15px;
+}
+
+.productTiles p:nth-child(1) {
+	color: #002b5a;
+	font-size: 17px;
+}
+
+.productTiles p:nth-child(2) {
+	color: #4987ca;
+	font-size: 13px;
+}
+
+.productTiles p:nth-child(3) {
+	font-size: 13px;
+	color: #666666;
+}
+
+.productTiles a {
+	font-size: 13px;
+	color: #666666;
+}
+
+.productTiles > img {
+	max-width: 190px;
+	display: inline-block;
+}
