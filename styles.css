@@ -37,13 +37,25 @@ h3 {
 	margin: 5px 0px;
 }
 
-.banner {
-background-image: url("assets/images/banner.jpg");
+#banner {
+background: url("assets/images/banner.jpg") no-repeat top center;
 background-size: cover;
 min-height: 372px;
 max-width: 960px;
 margin: 0 auto;
 }
+
+#connect {
+	float: right;
+  margin-top: 330px;
+  margin-right: 40px;
+}
+
+#connect p {
+	color: #ffffff;
+}
+
+
 
 #mainDesc {
 	padding: 0px 30px 0px 0px;
