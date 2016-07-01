@@ -155,18 +155,19 @@
         <!-- ========== PRODCUTS SECTION ========= -->
         <div class="container-fluid sectionSep">
             <div class="row">
-                <div class="col-md-10">
+                <div class="col-md-8">
                     <h2>Products</h2>
                 </div>
-                <div class="col-md-2">
-                    <h3>Fitler by</h3>
-                    <select>
-                        <option>All</option>
-                        <option>Less Than $500</option>
-                        <option>From $500 to $1000</option>
-                        <option>From $1000 to $2000</option>
-                        <option>$2000 or more</option>
-                    </select>
+                <div class="col-md-4">
+                    <p id="prodFilter">Filter by: 
+                        <select>
+                            <option>All</option>
+                            <option>Less Than $500</option>
+                            <option>From $500 to $1000</option>
+                            <option>From $1000 to $2000</option>
+                            <option>$2000 or more</option>
+                        </select>
+                    </p>
                 </div>
             </div>
             
@@ -212,7 +213,7 @@
         <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
           <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header" id='headerModal'>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h3 class="modal-title" id="gridSystemModalLabel"></h3>
                     <h3 class="modal-price" id="gridSystemModalLabel"></h3>

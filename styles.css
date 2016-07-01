@@ -55,8 +55,6 @@ margin: 0 auto;
 	color: #ffffff;
 }
 
-
-
 #mainDesc {
 	padding: 0px 30px 0px 0px;
 }
@@ -81,6 +79,11 @@ margin: 0 auto;
 #stateBox > h2 {
 	font-size: 20px;
 	margin-bottom: 20px;
+}
+
+select,
+option {
+	color: #002b5a;
 }
 
 .sectionSep {
@@ -143,6 +146,46 @@ margin: 0 auto;
 	display: inline-block;
 }
 
+#prodFilter {
+	float: right;
+	margin-top: 20px;
+	color: #666666;
+}
+
+.modal-title {
+	color: #002b5a;
+	font-size: 24px;
+}
+
+.modal-price {
+	color: #4987ca;
+	font-size: 19px;
+	margin: 10px 0 0;
+  font-style: italic;
+}
+
+#headerModal {
+	border-bottom: initial;
+}
+
+.modal-desc {
+	text-align: justify;
+}
+
 .modal-img {
 	max-width: 416px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
