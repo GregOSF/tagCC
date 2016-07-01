@@ -15,11 +15,6 @@ h3 {
 	text-transform: capitalize;
 }
 
-p {
-	color: #333;
-	font-family: 'Lato', sans-serif;
-}
-
 h1 {
 	font-family: 'Lato', sans-serif, !important;
 	font-size: 42px;
@@ -29,6 +24,10 @@ h1 {
 h2 {
 	font-size: 40px;
 	font-weight: 200;
+}
+
+.brMobileOnly {
+	display: none;
 }
 
 .gravidaTiles h3 {
@@ -43,15 +42,6 @@ h2 {
 	min-height: 372px;
 	max-width: 960px;
 	margin: 0 auto;
-}
-
-#bannerMobile {
-	background: url("assets/images/banner_Mobile.jpg") no-repeat top center;
-	background-size: cover;
-	margin: 0 auto;
-	min-height: 190px;
-	max-width: 375px;
-	display: none;
 }
 
 #connect {
@@ -72,12 +62,19 @@ h2 {
 	padding: 0px 30px 0px 0px;
 }
 
+#mainDesc p {
+	font-size: 16px;
+	color: #333;
+  font-family: 'Lato', sans-serif;
+  text-align: justify;
+}
+
 #stateBox {
 	-webkit-box-shadow: 2px 2px 17px 6px rgba(170,170,170,1);
 	-moz-box-shadow: 2px 2px 17px 6px rgba(170,170,170,1);
 	box-shadow: 2px 2px 17px 6px rgba(170,170,170,1);
 	margin-top: 25px;
-	background-color: #f5f5f5;
+	background-color: RGBA(243, 243, 243, 1.00);
 	padding: 0px 20px 20px;
   border-radius: 5px;
   display: inline-block;
@@ -125,6 +122,11 @@ option {
 
 .gravidaTiles{
 	padding: 15px;
+}
+
+.gravidaTiles p {
+	font-size: 12px;
+	text-align: justify;
 }
 
 .productTiles {
@@ -197,42 +199,130 @@ option {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
-
  	#banner {
-		display: none;
-	}
-
-	#bannerMobile {
-		display: inline-block !important;
-		min-height: 190px;
-		min-width: 375px;
-	}
+ 		background: url("assets/images/banner_Mobile.jpg") no-repeat top center;
+ 		background-size: cover;
+ 		margin: 0 auto;
+ 		min-height: 190px;
+ 		max-width: 375px;
+ 	}
 
 	#connect {
 		display: none;
 	}
+	
+	#mainDesc h1,
+	#inGravTitle {
+		margin: 0 0 20px;
+	}
+
+	#stateBox {
+		padding: 20px;
+  	display: inherit;
+	}
+
+	#stateBox > h2 {
+		margin-top: 0;
+	}
+
+	#mainRow {
+			padding: 20px;
+		}
+
+	#mainDesc {
+			padding: initial;
+	}
+
+	.sectionSep {
+    background-color: #f3f3f3;
+    margin: 10px;
+    padding: 20px;
+  }
+	
+	#prodFilter {
+		font-size: 12px;
+	}
+
+  #prodSelect {
+  	background: #ffffff;
+  }
+
+  .productTiles {
+		max-width: initial;
+  	width: 97%;
+  }
+
+  .productTiles > img {
+    max-width: 100%;
+	}
+
+  .list {
+  	background: #ffffff;
+  }
 }
 
 @media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px)  { 
-	#banner {
-		background: url("assets/images/banner.jpg") no-repeat top center;
-		background-size: cover;
-		min-height: 372px;
-		max-width: 960px;
-		margin: 0 auto;
-	}
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  	#prodFilter {
+  		float: initial;
+  	}
+
+  	#prodHead {
+  		margin-bottom: 0px;
+  	}
+
+  	.productTiles > img {
+    max-width: 100%;
+		}
+
 }
 
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+		.brMobileOnly {
+			display: inline;
+		}
+		#mainRow {
+			padding: 30px;
+		}
 
+		#mainDesc {
+			padding: initial;
+		}
 
+		#mainDesc h1,
+		#inGravTitle {
+			margin: 20px 0;
+		}
 
+  	.sectionSep {
+    background-color: #f3f3f3;
+    margin: 10px;
+    padding: 30px;
+		}
 
+		.productTiles {
+			background-color: #ffffff;
+			max-width: initial;
+			margin: 0 auto;
+			padding: 15px;
+		}
 
+		.productTiles > img {
+    max-width: 100%;
+		}
 
+		#prodSelect {
+			background: #ffffff;
+		}
 
+		.list {
+			background: #ffffff;
+		}
 
-
-
-
+}

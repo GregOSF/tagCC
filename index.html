@@ -12,7 +12,7 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
             
         <!-- LATO GOOGLE FONT -->
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
 
         <!-- BOOTSTRAP Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity=384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -26,39 +26,25 @@
         <!-- ========== BANNER IMAGE & SOCIAL ========= -->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-12">
-                <div id="banner">
-                    <div id="connect">
-                    <p>Connect: 
-                    &nbsp;
-                    &nbsp;
-                    <img src="assets/images/fb.png" alt="Facebook">
-                    <img src="assets/images/twitter.png" alt="Twitter">
-                    <img src="assets/images/pinterest.png" alt="Pinterest">
-                    <img src="assets/images/blog.png" alt="Blog">
-                    <img src="assets/images/email.png" alt="Email">
-                    </p>
+                <div class="col-md-12 col-sm-12">
+                    <div id="banner">
+                        <div id="connect">
+                        <p>Connect: 
+                        &nbsp;
+                        &nbsp;
+                        <img src="assets/images/fb.png" alt="Facebook">
+                        <img src="assets/images/twitter.png" alt="Twitter">
+                        <img src="assets/images/pinterest.png" alt="Pinterest">
+                        <img src="assets/images/blog.png" alt="Blog">
+                        <img src="assets/images/email.png" alt="Email">
+                        </p>
+                        </div>
                     </div>
                 </div>
-                </div>
-                
-                <div class="col-sm-12">
-                <div id="bannerMobile">
-                    <div id="connect">
-                    <p>Connect: 
-                    &nbsp;
-                    &nbsp;
-                    <img src="assets/images/fb.png" alt="Facebook">
-                    <img src="assets/images/twitter.png" alt="Twitter">
-                    <img src="assets/images/pinterest.png" alt="Pinterest">
-                    <img src="assets/images/blog.png" alt="Blog">
-                    <img src="assets/images/email.png" alt="Email">
-                    </p>
-                    </div>
-                </div>
-                </div>
+            
             </div>
         </div>
+        
         
         <!-- ========== MAIN ========= -->
         <div class="container-fluid">
@@ -136,7 +122,7 @@
         <div class="container-fluid sectionSep">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>In Gravida</h2>
+                    <h2 id="inGravTitle">In Gravida</h2>
                 </div>
             </div>
             
@@ -148,7 +134,7 @@
                 </div>
                 <div class="col-md-4 gravidaTiles">
                     <h3>Curabitur elementum</h3>
-                    <p>Cras vel imperdiet mauris. Pellentesque libero mauris, interdum a felis et, condimentum mattis erat.</p>
+                    <p>Cras vel imperdiet mauris. Pellentesque libero mauris, interdum a felis et, condimentum mattis erat.</p> <br>
                     <button class="learnMore">Learn More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
                 </div>
                 <div class="col-md-4 gravidaTiles">
@@ -180,10 +166,11 @@
         <!-- ========== PRODCUTS SECTION ========= -->
         <div class="container-fluid sectionSep">
             <div class="row">
-                <div class="col-md-8">
-                    <h2>Products</h2>
+                <div class="col-xs-8 col-md-8">
+                    <h2 id="prodHead">Products</h2>
                 </div>
-                <div class="col-md-4">
+                 <div class="clearfix visible-xs-block"></div>
+                <div class="col-xs-4 col-md-4">
                     <p id="prodFilter">Filter by: 
                         <select id="prodSelect">
                             <option>All</option>
@@ -197,7 +184,7 @@
             </div>
             
             <div class="row">
-                <div class="col-md-3 productTiles">
+                <div class="col-xs-6 col-md-3 productTiles">
                     <p>Product Title 1</p>
                     <p>Starting at $500</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing </p>
@@ -205,16 +192,20 @@
                     <img src="assets/images/cereal_b.jpg" alt="Product 1" data-toggle="modal" data-target="#productModal" data-id="1">                      
                     <button class="learnMore learnProds" id="prodOne" data-toggle="modal" data-target="#productModal" data-id="1">Learn More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
                 </div>
+                
 
-                <div class="col-md-3 productTiles">
+                <div class="col-xs-6 col-md-3 productTiles">
                     <p>Product Title 2</p>
                     <p>Starting at $1900</p>
                     <p>Donec ornare magna sit amet erat molestie sollicitudin ac vitae lectus.</p>
+                    <br class="brMobileOnly">
                     <img src="assets/images/flower_b.jpg" alt="Product 2" data-toggle="modal" data-target="#productModal" data-id="2">  
                     <button class="learnMore learnProds" id="prodTwo" data-toggle="modal" data-target="#productModal" data-id="2">Learn More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>   
                 </div>
+                
+                <div class="clearfix visible-xs-block"></div>
 
-                <div class="col-md-3 productTiles">
+                <div class="col-xs-6 col-md-3 productTiles">
                     <p>Product Title 3</p>
                     <p>Starting at $2730</p>
                     <p>Cras non metus sed odio tristique imperdiet.</p>
@@ -223,7 +214,7 @@
                     <button class="learnMore learnProds" id="prodThree" data-toggle="modal" data-target="#productModal" data-id="3">Learn More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true">
                 </div>
 
-                <div class="col-md-3 productTiles">
+                <div class="col-xs-6 col-md-3 productTiles">
                     <p>Product Title 4</p>
                     <p>Starting at $731</p>
                     <p>Pellentesque mattis tellus ut molestie dapibus.</p>
