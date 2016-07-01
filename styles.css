@@ -1,5 +1,5 @@
 body {
-	font-family: 'Lato', sans-serif, !important;
+	font-family: 'Lato', sans-serif !important;
 	text-align: justify;
 	background-color: rgba(227, 227, 227, 1.00) !important;
 	max-width: 960px;
@@ -95,10 +95,16 @@ margin: 0 auto;
 	font-size: 14px;
 	border-radius: 3px;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-	font-family: 'Lato', sans-serif, !important;
-	padding: 10px;
-	margin-right: 170px;
+	font-family: 'Lato', sans-serif !important;
+	padding: 9px;
 	display: inline-block;
+}
+
+.productTiles > .learnMore {
+	outline: none;
+  background-color: transparent;
+  border: none;
+  box-shadow: initial;
 }
 
 .gravidaTiles{
