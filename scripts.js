@@ -1,7 +1,4 @@
 console.log("Hello world");
-
-
-
 $(function(){
 
 	var products = {
@@ -334,8 +331,4 @@ $(function(){
   valueNames: ['stateName'], 
   plugins: [ ListFuzzySearch() ] 
 	});
-
-
-
-
 });
