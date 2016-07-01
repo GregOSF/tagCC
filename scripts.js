@@ -1,6 +1,7 @@
 console.log("Hello world");
 $(function(){
 
+	// PRODUCT OBJECT
 	var products = {
 		1: {
 		    id : 1,
@@ -68,6 +69,7 @@ $(function(){
 		}
 	};
 
+	// STATE OBJECTS
 	var states = [
 		{		
         "name": "Alabama",
@@ -309,26 +311,19 @@ $(function(){
 
 	console.log(states[0].name);
 
-	// Get the modal
+	// MODAL EVENT
 	$('#productModal').on('show.bs.modal', function (event) {
-	  var button = $(event.relatedTarget) // Button that triggered the modal
-	  var product = button.data('id') // Extract info from data-* attributes
-	  console.log(product)
-	  console.log(products[product].title)
-	  console.log(product)
-	  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-	  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+	  // ONCLICK
+	  var button = $(event.relatedTarget)
+	  var product = button.data('id')
 	  var modal = $(this)
+
+	  // RENDER VALUES TO DOM
 	  modal.find('.modal-title').text(products[product].title)
 	  modal.find('.modal-priceDesc').text(products[product].priceDesc)
 	  modal.find('.modal-desc').text(products[product].desc)
 	  modal.find('.modal-img').text(products[product].img)
 	  modal.find('.modal-body input').val(product)
 	  $(".modal-img").attr("src", products[product].img);
-	});
-
-	var stateList = new List('#test-list', { 
-  valueNames: ['stateName'], 
-  plugins: [ ListFuzzySearch() ] 
 	});
 });

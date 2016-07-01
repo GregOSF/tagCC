@@ -215,70 +215,70 @@ option {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
- 	#banner {
- 		background: url("assets/images/banner_Mobile.jpg") no-repeat top center;
- 		background-size: cover;
- 		margin: 0 auto;
- 		min-height: 190px;
- 		max-width: 375px;
- 	}
+	 	#banner {
+	 		background: url("assets/images/banner_Mobile.jpg") no-repeat top center;
+	 		background-size: cover;
+	 		margin: 0 auto;
+	 		min-height: 190px;
+	 		max-width: 375px;
+	 	}
 
-	#connect {
-		display: none;
-	}
-	
-	#mainDesc h1,
-	#inGravTitle {
-		margin: 0 0 20px;
-	}
-
-	#stateBox {
-		padding: 20px;
-  	display: inherit;
-	}
-
-	#stateBox > h2 {
-		margin-top: 0;
-	}
-
-	#mainRow {
-			padding: 20px;
+		#connect {
+			display: none;
+		}
+		
+		#mainDesc h1,
+		#inGravTitle {
+			margin: 0 0 20px;
 		}
 
-	#mainDesc {
-			padding: initial;
-	}
+		#stateBox {
+			padding: 20px;
+	  	display: inherit;
+		}
 
-	.sectionSep {
-    background-color: #f3f3f3;
-    margin: 10px;
-    padding: 20px;
-  }
-	
-	#prodFilter {
-		font-size: 12px;
-	}
+		#stateBox > h2 {
+			margin-top: 0;
+		}
 
-  #prodSelect {
-  	background: #ffffff;
-  }
+		#mainRow {
+				padding: 20px;
+			}
 
-  .productTiles {
-		max-width: initial;
-  	width: 97%;
-  }
+		#mainDesc {
+				padding: initial;
+		}
 
-  .productTiles > img {
-    max-width: 100%;
-	}
+		.sectionSep {
+	    background-color: #f3f3f3;
+	    margin: 10px;
+	    padding: 20px;
+	  }
+		
+		#prodFilter {
+			font-size: 12px;
+		}
 
-  .list {
-  	background: #ffffff;
-  }
+	  #prodSelect {
+	  	background: #ffffff;
+	  }
 
-  .modal-img {
-	max-width: 100%;
-	}
+	  .productTiles {
+			max-width: initial;
+	  	width: 97%;
+	  }
+
+	  .productTiles > img {
+	    max-width: 100%;
+		}
+
+	  .list {
+	  	background: #ffffff;
+	  }
+
+	  .modal-img {
+		max-width: 100%;
+		}
 }
 
 /* ========== MOBILE - IPHONE 5 AND SIMILAR SCREENS ========== */
@@ -301,7 +301,6 @@ option {
 	  .modal-img {
 		max-width: 100%;
 		}
-
 }
 
 /* ========== MOBILE - IPHONE 6 ========== */
@@ -361,10 +360,10 @@ option {
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 2) {
+  	
 		.brMobileOnly {
 			display: inline;
 		}
-
 
 		#mainRow {
 			padding: 30px;
