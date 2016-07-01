@@ -31,7 +31,7 @@ h2 {
 	font-weight: 200;
 }
 
-h3 {
+.gravidaTiles h3 {
 	font-size: 15px;
 	font-weight: normal;
 	margin: 5px 0px;
@@ -141,4 +141,8 @@ margin: 0 auto;
 .productTiles > img {
 	max-width: 190px;
 	display: inline-block;
+}
+
+.modal-img {
+	max-width: 416px;
 }
