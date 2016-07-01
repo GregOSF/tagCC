@@ -190,9 +190,25 @@ option {
 
 .modal-img {
 	max-width: 416px;
+	-webkit-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.5);
+	box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.5);
 }
 
-/* ========== MEDIA QUERIES ========== */
+#buyNow {
+	background-color: #002b5a;
+	color: #ffffff;
+	font-size: 14px;
+	border-radius: 3px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+	font-family: 'Lato', sans-serif !important;
+	padding: 9px;
+	display: inline-block;
+}
+
+/* ==================== MEDIA QUERIES ==================== */
+
+/* ========== MOBILE  ========== */
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
@@ -259,8 +275,13 @@ option {
   .list {
   	background: #ffffff;
   }
+
+  .modal-img {
+	max-width: 100%;
+	}
 }
 
+/* ========== MOBILE - IPHONE 5 AND SIMILAR SCREENS ========== */
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
@@ -277,8 +298,13 @@ option {
     max-width: 100%;
 		}
 
+	  .modal-img {
+		max-width: 100%;
+		}
+
 }
 
+/* ========== MOBILE - IPHONE 6 ========== */
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
@@ -323,6 +349,92 @@ option {
 
 		.list {
 			background: #ffffff;
+		}
+
+	  .modal-img {
+			max-width: 100%;
+		}
+}
+
+/* ========== MOBILE - TABLET ========== */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+		.brMobileOnly {
+			display: inline;
+		}
+
+
+		#mainRow {
+			padding: 30px;
+		}
+
+		#mainDesc {
+			padding: initial;
+		}
+
+		#mainDesc h1,
+		#inGravTitle {
+			margin: 20px 0;
+		}
+
+  	.sectionSep {
+    background-color: #f3f3f3;
+    margin: 10px;
+    padding: 30px;
+		}
+
+		.productTiles {
+			background-color: #ffffff;
+			max-width: initial;
+			margin: 0 auto;
+			padding: 40px;
+		}
+
+		.productTiles > img {
+    max-width: 100%;
+		}
+
+		#prodSelect {
+			background: #ffffff;
+		}
+
+		.list {
+			background: #ffffff;
+		}
+
+		.modal-title {
+			padding: 0 10px;
+		}
+
+		.modal-priceDesc {
+			padding: 0 10px;
+		}
+
+		.modal-desc {
+			text-align: justify;
+			padding: 0 25px 30px;
+		}
+
+	  .modal-img {
+			max-width: 100%;
+		}
+		
+		#buyNow {
+			background-color: #002b5a;
+			color: #ffffff;
+			font-size: 14px;
+			border-radius: 3px;
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+			font-family: 'Lato', sans-serif !important;
+			padding: 9px;
+			display: inline-block;
+		}
+
+		#buyNowDiv {
+			text-align: center;
+    	padding: 20px;
 		}
 
 }
